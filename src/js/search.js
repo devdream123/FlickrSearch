@@ -1,24 +1,3 @@
-/*
-function searchFlickrPhoto(location, longtitude, latitude) {
-    var FLICKR_API_KEY = "6a669c22eae9c3cc0c4bc67a26f2b1ce"; //"f7636588d15ff7c6847b45bdfa9ab33c";
-    var FLICKR_SECRET = "d75d2ff57751c0b9";
-    var jsonRequest = "https://api.flickr.com/services/rest/?method=flickr.photos.search&";
-    var requestParam = {
-        api_key: FLICKR_API_KEY,
-        lat: latitude,
-        lon: longtitude,
-        per_page: 10,
-        format: "json",
-        nojsoncallback: 1
-    };
-    //alert(requestParam);
-    //Send the request
-    //  $.getJSON(jsonRequest, requestParam).done(getFlickrResponse);
-    // $(".result h3").append(data.val());
-
-}
-*/
-
 function searchFlickrPhoto(location, longtitude, latitude) {
     var FLICKR_API_KEY = "6a669c22eae9c3cc0c4bc67a26f2b1ce"; //"f7636588d15ff7c6847b45bdfa9ab33c";
     var FLICKR_SECRET = "d75d2ff57751c0b9";
