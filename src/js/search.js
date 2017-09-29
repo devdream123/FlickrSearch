@@ -1,5 +1,5 @@
 function searchFlickrPhoto(location, longtitude, latitude) {
-    var FLICKR_API_KEY = "6a669c22eae9c3cc0c4bc67a26f2b1ce"; //"f7636588d15ff7c6847b45bdfa9ab33c";
+    var FLICKR_API_KEY = "f7636588d15ff7c6847b45bdfa9ab33c"; //"6a669c22eae9c3cc0c4bc67a26f2b1ce"; 
     var FLICKR_SECRET = "d75d2ff57751c0b9";
     var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&";
 
@@ -12,11 +12,11 @@ function searchFlickrPhoto(location, longtitude, latitude) {
         format: "json",
         nojsoncallback: "?"
     };
-    var photoUrl;
     $.getJSON(url, requestParam, getFlickrResponse);
 }
 
 function getFlickrResponse(data) {
+    var photoUrl;
     console.log(data.photos.photo);
     $.each(data.photos.photo, function(i, item) {
         photoUrl = "http://farm" + item.farm + ".static.flickr.com/" + item.server + "/" + item.id + "_" + item.secret + "_m.jpg";
